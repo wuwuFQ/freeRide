@@ -1,0 +1,5 @@
+/* pages/aboutUS/aboutUS.wxss */
+
+view {
+  margin: 30rpx 30rpx;
+}

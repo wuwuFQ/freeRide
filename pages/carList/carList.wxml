@@ -1,0 +1,28 @@
+<!--pages/carList/carList.wxml-->
+
+<view class="carList" wx:for="{{dataArr}}">
+      <view class="carItem" bindtap="itemClickHandle" id="{{index}}">
+        <!-- 地点和时间的 块view -->
+        <view class="topView">
+          <view class="startCity">
+            <view class="cityView">{{item.startCity}}</view>
+            <view class="cityDetail">{{item.startArea}}</view>
+          </view>
+          <view class="timeView">
+            <view>{{item.firstTime}}</view>
+            <image src="/images/arrow.png" style="width: 100px; height: 10px;" />
+            <view>{{item.lastTime}}</view>
+
+          </view>
+          <view class="endCity">
+            <view class="cityView">{{item.endCity}}</view>
+            <view class="cityDetail">{{item.endArea}}</view>
+          </view>
+        </view>
+        
+        <!-- 可载几人 -->
+        <view class="numPeople">
+          招募{{item.numPeople || '*'}}人
+        </view>
+      </view>
+</view>

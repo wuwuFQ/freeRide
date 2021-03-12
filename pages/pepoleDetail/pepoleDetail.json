@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "人员详情",
+  "usingComponents": {
+    "van-cell": "/commons/vant-weapp/lib/cell/index",
+    "van-cell-group": "/commons/vant-weapp/lib/cell-group/index"
+  }
+}

@@ -1,0 +1,8 @@
+<!--pages/minePublish/minePublish.wxml-->
+
+<view style="height: 20px"></view>
+<van-cell-group>
+
+<van-cell title="找车的行程" is-link bind:click="publishCarClickHandle"/>
+<van-cell title="找人的行程" is-link bind:click="publishPeopleClickHandle"/>
+</van-cell-group>

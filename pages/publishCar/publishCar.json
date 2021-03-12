@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "发布车辆",
+  "usingComponents": {
+    "van-cell": "/commons/vant-weapp/lib/cell/index",
+    "van-cell-group": "/commons/vant-weapp/lib/cell-group/index",
+    "van-button": "/commons/vant-weapp/lib/button/index",
+    "van-field": "/commons/vant-weapp/lib/field/index",
+    "van-area": "/commons/vant-weapp/lib/area/index",
+    "van-datetime-picker": "/commons/vant-weapp/lib/datetime-picker/index",
+    "van-popup": "/commons/vant-weapp/lib/popup/index"
+
+  }
+}

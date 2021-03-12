@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的发布",
+  "usingComponents": {
+    "van-cell": "/commons/vant-weapp/lib/cell/index",
+    "van-cell-group": "/commons/vant-weapp/lib/cell-group/index"
+
+  }
+}

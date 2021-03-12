@@ -1,0 +1,33 @@
+/* pages/mine/mine.wxss */
+
+.avatarView {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+.avatar {
+  width: 180rpx;
+  height: 180rpx;
+  overflow:hidden;  
+  border-radius: 50%; 
+
+
+}
+
+.nickName {
+  text-align: center;
+  font: 10rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 10px 0;
+}
+.pushBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 80rpx;
+  margin-bottom: 80rpx;
+}
+.van-button__text {
+  color: #333;
+}

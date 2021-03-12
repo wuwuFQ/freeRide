@@ -1,0 +1,34 @@
+<!--pages/minePubPeople/minePubPeople.wxml-->
+
+
+<view class="pepoleList" wx:for="{{dataArr}}">
+  <!-- bindtap="itemClickHandle" id="{{index}}" -->
+      <view class="pepoleItem" >
+        <!-- 地点和时间的 块view -->
+        <view class="topView">
+          <view class="startCity">
+            <view class="cityView">{{item.startCity}}</view>
+            <view class="cityDetail">{{item.startArea}}</view>
+          </view>
+          <view class="timeView">
+            <view>{{item.firstTime}}</view>
+            <image src="/images/arrow.png" style="width: 350rpx; height: 20rpx;" />
+            <view>{{item.lastTime}}</view>
+
+          </view>
+          <view class="endCity">
+            <view class="cityView">{{item.endCity}}</view>
+            <view class="cityDetail">{{item.endArea}}</view>
+          </view>
+        </view>
+        
+        <!-- 共几人 -->
+        <view class="numPeople">
+          共{{item.numPeople || '*'}}人
+        </view>
+        <view class="buttonView">
+          <van-button round size="small" type="danger" bind:click="deleteHandle" id="{{index}}">删除</van-button>
+          <van-button plain round size="small" type="info" bind:click="modifyHandle" id="{{index}}">修改</van-button>
+        </view>
+      </view>
+</view>

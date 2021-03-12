@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/carList/carList",
+    "pages/pepole/pepole",
+    "pages/mine/mine",
+    "pages/carDetail/carDetail",
+    "pages/pepoleDetail/pepoleDetail",
+    "pages/publishCar/publishCar",
+    "pages/publishPepole/publishPepole",
+    "pages/minePublish/minePublish",
+    "pages/minePubCar/minePubCar",
+    "pages/minePubPeople/minePubPeople",
+    "pages/aboutUS/aboutUS"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff000",
+    "navigationBarTitleText": "凡凡拼车",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/carList/carList",
+        "text": "车主",
+        "iconPath": "/images/carDefault.png",
+        "selectedIconPath": "/images/carSelect.png"
+      },
+      {
+        "pagePath": "pages/pepole/pepole",
+        "text": "乘客",
+        "iconPath": "/images/peopleDefault.png",
+        "selectedIconPath": "/images/peopleSelect.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/mineDefault.png",
+        "selectedIconPath": "/images/mineSelect.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "发布的车辆",
+  "usingComponents": {
+    "van-button": "/commons/vant-weapp/lib/button/index"
+  }
+}

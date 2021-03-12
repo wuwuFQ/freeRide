@@ -1,0 +1,65 @@
+<!--pages/publishList/publishList.wxml-->
+<!-- animated sticky swipeable-->
+<van-tabs animated>
+  <van-tab title="车找人" wx:key="1">
+
+    <view class="carList" wx:for="10222">
+      <view class="carItem" bindtap="itemClickHandle" id="{{index}}">
+        <!-- 地点和时间的 块view -->
+        <view class="topView">
+          <view class="startCity">
+            <view class="cityView">北京市</view>
+            <view class="cityDetail">海淀区</view>
+          </view>
+          <view class="timeView">
+            <view>2021-02-09 10:58:07</view>
+            <image src="/images/arrow.png" style="width: 350rpx; height: 20rpx;" />
+            <view>2021-02-09 10:58:07</view>
+
+          </view>
+          <view class="endCity">
+            <view class="cityView">菏泽市</view>
+            <view class="cityDetail">鄄城县</view>
+          </view>
+        </view>
+        <!-- 可载几人 -->
+        <view class="numPeople">
+          招募4人
+        </view>
+      </view>
+    </view>
+
+  </van-tab>
+
+  <van-tab title="人找车" wx:key="2">
+   
+    <view class="carList" wx:for="123456789">
+      <view class="carItem">
+        <!-- 地点和时间的 块view -->
+        <view class="topView">
+          <view class="startCity">
+            <view class="cityView">北京市</view>
+            <view class="cityDetail">海淀区</view>
+          </view>
+          <view class="timeView">
+            <view>2021-02-09 10:58:07</view>
+            <image src="/images/arrow.png" style="width: 350rpx; height: 20rpx;" />
+            <view>2021-02-09 10:58:07</view>
+
+          </view>
+          <view class="endCity">
+            <view class="cityView">菏泽市</view>
+            <view class="cityDetail">鄄城县</view>
+          </view>
+        </view>
+        <!-- 一共几人 -->
+        <view class="numPeople">
+          共3人
+        </view>
+      </view>
+    </view>
+
+  </van-tab>
+</van-tabs>
+
+<!-- // 作废, -->

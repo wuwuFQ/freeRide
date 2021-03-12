@@ -1,0 +1,91 @@
+<!--pages/publishCar/publishCar.wxml-->
+
+
+<van-cell-group title="行程">
+  <picker mode="region" value="{{region_start}}" bindchange="bindStartRegionChange">
+    <van-field label="出发地" type="textarea" autosize is-link required>
+      <view slot="input">
+        {{region_start[0]}}-{{region_start[1]}}-{{region_start[2]}}
+      </view>
+    </van-field>
+  </picker>
+
+  <picker mode="region" value="{{region_end}}" bindchange="bindEndRegionChange">
+    <van-field label="目的地" type="textarea" autosize is-link required>
+      <view slot="input">
+        {{region_end[0]}}-{{region_end[1]}}-{{region_end[2]}}
+      </view>
+    </van-field>
+  </picker>
+
+</van-cell-group>
+
+<van-cell-group title="时间段">
+
+  <picker mode="date" value="{{startDate}}" start="{{minDate}}" bindchange="clickStartDateHandle">
+    <van-field label="最早出发日期" is-link required>
+      <view slot="input">
+        {{startDate}}
+      </view>
+    </van-field>
+  </picker>
+  <picker mode="time" value="{{startTime}}" start="{{minDate}}" bindchange="clickStartTimeHandle">
+    <van-field label="最早出发时间" is-link required>
+      <view slot="input">
+        {{startTime}}
+      </view>
+    </van-field>
+  </picker>
+
+  <picker mode="date" value="{{endDate}}" bindchange="clickEndDateHandle">
+    <van-field label="最晚出发日期" is-link required>
+      <view slot="input">
+        {{endDate}}
+      </view>
+    </van-field>
+  </picker>
+  <picker mode="time" value="{{endTime}}" bindchange="clickEndTimeHandle">
+    <van-field label="最晚出发时间" is-link required>
+      <view slot="input">
+        {{endTime}}
+      </view>
+    </van-field>
+  </picker>
+</van-cell-group>
+
+<van-cell-group title="车辆信息">
+  <van-field label="爱车品牌" value="{{ carBrand }}" placeholder="如：大众，奥迪，长安，哈佛" input-align="right" clearable
+    bind:change="carBrandInputChange" />
+  <van-field label="爱车类别" value="{{ carType }}" placeholder="如：面包车,出租车,SUV,MPV" input-align="right" clearable
+    bind:change="carTypeInputChange" />
+
+  <van-field label="需要几人" value="{{ numPeople }}" placeholder="请输入您还可载几人" input-align="right" clearable type="number"
+    bind:change="numberPepoleInputChange" />
+  <van-field label="预估价格" value="{{ price }}" placeholder="每个乘客大概多少钱" input-align="right" clearable type="digit"
+    bind:change="howMuchIputChange" />
+  <van-field label="联系方式" value="{{ mobile }}" placeholder="请输入您的手机号" input-align="right" clearable required
+    type="number" bind:change="mobileInputChange" />
+
+
+</van-cell-group>
+
+
+<van-cell-group title="备注">
+  <van-field value="{{ remarks }}" type="textarea" placeholder="请输入你想对老乡说的话..." autosize border="{{ false }}"
+    bind:change="remarkIputChange" />
+</van-cell-group>
+
+<view class="pushBtn">
+  <view wx:if="{{isModify}}" style="width: 80%">
+    <van-button color="linear-gradient(to right, #00eeffe5, #fff000)" round block bind:click="pushBtnHandle">
+      修改行程
+    </van-button>
+  </view>  
+  <view wx:else style="width: 80%">
+    <van-button color="linear-gradient(to right, #00eeffe5, #fff000)" round block bind:click="pushBtnHandle">
+      发布行程
+    </van-button>
+  </view>
+</view>
+
+<view style="height: 20px"></view>

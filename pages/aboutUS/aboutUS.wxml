@@ -1,0 +1,5 @@
+<!--pages/aboutUS/aboutUS.wxml-->
+
+<view><text space="nbsp">{{text_1}}</text></view>
+<view><text space="nbsp">{{text_2}}</text></view>
+<view><text space="nbsp">{{text_3}}</text></view>

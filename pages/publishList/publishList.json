@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-tab": "/commons/vant-weapp/lib/tab/index",
+    "van-tabs": "/commons/vant-weapp/lib/tabs/index"
+  
+  }
+}

@@ -1,0 +1,11 @@
+/* pages/publishPepole/publishPepole.wxss */
+
+.pushBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+}
+.van-button__text {
+  color: #333;
+}

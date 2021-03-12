@@ -1,0 +1,27 @@
+<!--pages/pepole/pepole.wxml-->
+<view class="pepoleList" wx:for="{{dataArr}}">
+      <view class="pepoleItem" bindtap="itemClickHandle" id="{{index}}">
+        <!-- 地点和时间的 块view -->
+        <view class="topView">
+          <view class="startCity">
+            <view class="cityView">{{item.startCity}}</view>
+            <view class="cityDetail">{{item.startArea}}</view>
+          </view>
+          <view class="timeView">
+            <view>{{item.firstTime}}</view>
+            <image src="/images/arrow.png" style="width: 320rpx; height: 10px;" />
+            <view>{{item.lastTime}}</view>
+
+          </view>
+          <view class="endCity">
+            <view class="cityView">{{item.endCity}}</view>
+            <view class="cityDetail">{{item.endArea}}</view>
+          </view>
+        </view>
+        
+        <!-- 共几人 -->
+        <view class="numPeople">
+          共{{item.numPeople || '*'}}人
+        </view>
+      </view>
+</view>
